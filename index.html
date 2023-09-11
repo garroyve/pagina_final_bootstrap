@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pelis Guille</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <!--headear-->
+   <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container bg-black">
+        <!--logo-->
+      <a class="navbar-brand logo" href="#">
+        <img src="imagenes/logo.png" alt="">
+      </a>
+      <!--boton-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--enlaces-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Anime
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Suspenso</a></li>
+              <li><a class="dropdown-item" href="#">Accion</a></li>
+              <li><a class="dropdown-item" href="#">Hentai</a></li>
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Documentales</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Fin del header-->
+  <!--Inicio carrusel-->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="imagenes/spiderman.jpg" class="img-fluid w-100 img" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5>El Sorprendente Hombre Araña</h5>
+          <p>Nuevas aventuras</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/Stringer.jpg" class="d-block w-100 img" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5>Stranger Things</h5>
+          <p>todo lo que sabemos sobre la temporada 5 y final de la serie de Netflix con Millie Bobby Brown.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/dragolball.avif" class="d-block img-fluid w-100 img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>El mejor anime de todos</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Fin carrusel-->
+  <!--botones-->
+    <div class="color_fondo d-flex justify-content-between">
+        <div>
+            <span class="fs-5 text-white ">Film</span>
+            <button class="btn dropdown-toggle color_botones" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BUSQUEDA
+              </button>
+              <ul class="dropdown-menu dropdown-menu-white">
+                <li><a class="dropdown-item text-white bg-dark" href="#">Peliculas</a></li>
+                <li><a class="dropdown-item text-white bg-dark" href="#">Series</a></li>
+                <li><a class="dropdown-item text-white bg-dark" href="#">Documentales</a></li> 
+                <li><a class="dropdown-item text-white bg-dark" href="#">Anime</a></li>
+              </ul>
+
+        </div>
+        <div>
+            <button type="button" class="btn btn-primar color_botones position-relative ms-auto">COMPRAR</button>
+            <button type="button" class="btn btn-secondar color_botones">ARQUILAR</button>
+        </div>
+        
+       
+    </div>
+    <!-- Example single danger button -->
+    <div class="btn-group boton7 color_fondo" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">Peliculas</button>
+        <button type="button" class="btn btn-outline-primary">Series</button>
+        <button type="button" class="btn btn-outline-primary">Documentales</button>
+        <button type="button" class="btn btn-outline-primary">Por arquiler</button>
+        <button type="button" class="btn btn-outline-primary">Por demanda</button>
+        <button type="button" class="btn btn-outline-primary">Comprar</button>
+        <button type="button" class="btn btn-outline-primary">Financiar</button>
+      </div>
+<!--PELICULAS-->    
+    <div class="container-fluid">
+    <div class="row  my-1 ">
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/avatar.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Avatar</h2>
+                    <p>El ultimo viaje</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/malefica2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Malefica</h2>
+                    <p>Mundo Oscuro</p>
+                  <p class="card-text">2016</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/underword3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Underwrold</h2>
+                    <p>Sangre</p>
+                  <p class="card-text">2018</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/valiente4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Valiente</h2>
+                    <p>Hasta la muerte</p>
+                  <p class="card-text">1996</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/cruela5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Cruella</h2>
+                    <p>Pura maldad</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/titanic6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>The titanic</h2>
+                    <p>El amor de rose</p>
+                  <p class="card-text">1996</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/loper7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Looper</h2>
+                    <p>El secreto</p>
+                  <p class="card-text">2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/driver8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Driver</h2>
+                    <p>Metal furioso</p>
+                  <p class="card-text">1995</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/guardianes9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Guardianes de la galxia</h2>
+                    <p>El ultimo viaje</p>
+                  <p class="card-text">2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/wolverine10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Wolverine</h2>
+                    <p>Maestro</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/bella11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>La bella y la bestia</h2>
+                    <p>amor salvaje</p>
+                  <p class="card-text">2016</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/ghost12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Ghost</h2>
+                    <p>la accion </p>
+                  <p class="card-text">2013</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/herahielo13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>La Hera de Hielo</h2>
+                    <p>un viaje salvaje</p>
+                  <p class="card-text">2014</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/uncharted14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Uncharted</h2>
+                    <p>La salvacion</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/termintor15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Terminator</h2>
+                    <p>La salvacion</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/anillos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>El señor de ls Anillos</h2>
+                    <p>la busqueda</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/hentai17.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>Hentai</h2>
+                    <p>Solo para adultos</p>
+                  <p class="card-text">1999</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-2 my-3">
+            <div class="card" >
+                <img src="imagenes/el niño19.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>El niño</h2>
+                    <p>la perdicion</p>
+                  <p class="card-text">2011</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+<!-- FIN PELICULAS-->
+<!--informacion-->
+    <div class="container-fluid">
+    <div class="row text-white text-center">
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>TV</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>Accion</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>PC</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>Series</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>Adultos</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+        <div class="col-sm-6 col-md-2 col-lg-2">
+            <h2>Social</h2>
+            <P>mentoria</P>
+            <P>editacion</P>
+            <P>Creditos</P>
+        </div>
+    </div>
+    </div>
+<!--fin informacion-->
+<!--footer-->
+<div class="container-fluid bg-black">
+    <div class="row text-center text-white">
+        <div class="col-sm-2 col-md-4 col-lg-4">
+            <img class="img1" src="imagenes/logo.png" alt="">
+        </div>
+        <div class="col-sm-2 col-md-4 col-lg-4 fs-5">
+            <p>Elaborado por Guillermo Leon arroyave Velez</p>
+        </div>
+        <div class="col-sm-2 col-md-4 col-lg-4 iconos">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>

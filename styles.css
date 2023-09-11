@@ -1,0 +1,44 @@
+body{
+    background-color: black
+}
+
+
+.img{
+    height: 600px;
+}
+.navbar-brand img{
+    height: 50px ;
+}
+.color{
+    color: white;
+}
+
+.color_fondo{
+    width: 100%;
+    background-color:black;
+    height: 50px;
+}
+button{
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00ddff
+    );
+}
+.boton7 button{
+    width: 120px;
+}
+.img1{
+    width: 60%;
+    height: 80px;
+}
+.iconos{
+    font-size: 50px;
+}
+.card-img-top{
+    height: 300px;
+}
+.card  h2{
+    font-size: 20px ;
+}
